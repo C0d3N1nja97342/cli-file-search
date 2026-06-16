@@ -1,0 +1,35 @@
+{
+  "name": "cli-file-search",
+  "version": "1.0.0",
+  "description": "A fast and colorful CLI file search tool written in TypeScript",
+  "main": "dist/index.js",
+  "bin": {
+    "cli-file-search": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "cli",
+    "search",
+    "file",
+    "find",
+    "grep"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "glob": "^10.3.10",
+    "minimatch": "^10.2.5",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
